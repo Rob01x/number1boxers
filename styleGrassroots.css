@@ -1,0 +1,110 @@
+
+/*The background colour for the main content of the page along with the margins and padding values used*/
+#holygrail > * {
+  margin: 0% 0%;
+  padding: 1%;
+  background-color: #ffffff;
+}
+
+ /*Div for the background image of a trainer with the blurred fighters in a ring and with a bold white text with a black border "Grassroots" 
+*/
+#holygrail header {
+  background-image: url(https://github.com/Rob01x/boxingimages/blob/main/alex-alvarado-TrainerRingside-unsplash.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 66% 34%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  padding-bottom: 100%;
+  padding: 10%;
+  border: 2px solid black;
+  border-radius: 2rem;
+  box-shadow: 20px 20px 20px;
+}
+/*Flex settings for content*/
+#holygrail article {
+  flex: 1 1 100vw;
+}
+  
+  
+  
+  /*Grassroots section uses flex box row wrap properties to maintain the size of the images and the space-around property value is used to maintain certain margins around the photos for when the website is displayed on different devices*/
+  article#grassroots {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  img.cam-1 {
+    margin: 1% 0;
+    padding: 3% 2.5% 0 2.5%;
+    max-width: 410px;
+  }
+  /*This separate class has been designated to this photo as its next to the table and so to keep certain the margins even and neat I put this image under a different class from the rest of the images.*/
+  img.cam-2 {
+    margin: 1% auto;
+    padding: 3% 0.5% 2.5% 2.5%;
+    max-width: 410px;
+  }
+  /*Captions are used in these photos to show the client what type of punch is being thrown to show the various moves used in boxing
+  */
+  figcaption {
+    margin: 1% 0;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  figcaption .cam-2 {
+    margin: 1% 0;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  
+  /*Table used to show Camerons bio to the user
+  */
+  table,
+  .cam,
+  th,
+  td {
+    min-width: 40vw;
+  }
+
+  /*Features the video player size and positioning along with the captions below it*/
+  .video-cam {
+    width: 85vw;
+    margin: 1% auto;
+    padding: 1% auto;
+  }
+  #video-caption {
+    width: 85vw;
+    text-align: justify;
+    margin: 1% auto;
+    padding: 2% auto;
+    font-weight: bold;
+  }
+  .video-info {
+    width: 85vw;
+    text-align: justify;
+    margin: auto;
+    padding: 2% 0;
+    font-size: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .copyright {
+    width: 85vw;
+    text-align: justify;
+    margin: 2% auto;
+    padding: 1% 0;
+    font-size: 78%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .video-info a{
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: 1000;
+    font-family: "Robotica";
+    font-size: larger;
+  }
+
+  
+  
