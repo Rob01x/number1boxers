@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleContact.css">
+</head>
+<body>
+   <!-- Fixed navigation bar that uses a css drop down menu-->
+  <div class="nav-bar">
+    <nav>
+      <ul class="dropdown">
+        <li class="Weight"><a href="index.html">Weight</a>
+          <ul>
+            <li><a href="index.html#lightweight">lightweight</a></li>
+            <li><a href="index.html#light-welterweight">light welterweight</a></li>
+            <li><a href="index.html#welterweight">welterweight</a></li>
+            <li><a href="index.html#light-middleweight">light middleweight</a></li>
+            <li><a href="index.html#middleweight">middleweight</a></li>
+            <li><a href="index.html#super-middleweight">super middleweight</a></li>
+            <li><a href="index.html#light-heavyweight">light heavyweight</a></li>
+            <li><a href="index.html#cruiserweight">cruiserweight</a></li>
+            <li><a href="index.html#heavyweight">heavyweight</a></li>
+          </ul>
+        </li>
+        <li><a href="grassroots.html">Grassroots</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+                           
+  <div id="holygrail">
+<!-- Container for homepage image of a pro boxer entering the ring with the slogan of the website in the centre --> 
+    <header>
+      <h1>Contact</h1>
+    </header>
+
+<!-- This is the main section of the page containing most of the content on boxers in their relevant weight categories -->                         
+    <article>
+      <h2>Contact</h2>
+      <br>
+      <p class="contact-text">For any questions, feedback or information email:<a href="mailto:admin@number1boxers.com"> admin@number1boxers.com</a></p>
+      <p class="contact-text">Alternatively fill in the form:</p>
+      <br> 
+      <form method="post" action="contact.php" id="contactform">
+        <fieldset form="user_regn" name="user_details" class="fieldset-form">
+            <br>
+            <label for="fname" class="formdetails">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="1name" class="formdetails">Last name:</label>
+            <input type="text" id="sname" name="sname"><br><br>
+            <label for="email" class="formdetails">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+    
+            <textarea name="comment" form="usrcomment" id="commentdetails" cols="35" rows="25">Enter your comments.....</textarea>
+            <br><br>
+        
+
+        </fieldset>
+        <input type="submit" value="Submit" class="submit-button">
+    </form>
+    </article>
+</body>
+</html>
