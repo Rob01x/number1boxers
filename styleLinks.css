@@ -1,0 +1,83 @@
+
+/*The background colour for the main content of the page along with the margins and padding values used*/
+#holygrail > * {
+  margin: 0% 0%;
+  padding: 1%;
+  background-color: #ffffff;
+}
+  /*Div for the background image of a boxer punching a punch bag with the header in bold white text with a black border "Contact" 
+  */
+  #holygrail header {
+    background-image: url(https://github.com/Rob01x/boxingimages/blob/main/johann-walter-bantz-HG1pkXN7SVA-small-unsplash.jpg?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 35%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding-bottom: 100%;
+    padding: 10%;
+    border: 2px solid black;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 20px;
+  }
+  /*Flex settings for content*/
+  #holygrail article {
+    flex: 1 1 100vw;
+  }
+    
+
+  /*By keeping the h3 min-width to 90vw it means that this part of the conent remains similar to the rest of the page when the content is viewed on smaller devices.
+  */
+  
+  .holy-grail article h3 {
+    display: inline-block;
+    min-width: 90vw;
+  }
+  
+  .link-image {
+    margin: 1% auto;
+    padding-top: 0%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 55vw;
+  }
+  
+  /*Give the introduction to the other websites section a black font coloring and boldness*/
+  #links-text {
+    color:#000000;
+    font-family: verdana;
+    font-size: 110%;
+  }
+  
+  article ul {
+    list-style-type: none;
+    width: 88vw;
+    
+    margin: auto;
+    padding: 2% 0;
+  }
+  /*Text values used to ensure that the bullet points below look neat on the browser */
+  .links-text2, .links-text1 {
+    line-height: 2em;
+    margin: 2% 0 1 1%;
+    padding:  1% 1% 1% 5%; 
+  }
+  
+  /*This enables the arrow image to be used as a bullet point in the un-ordered list and occupy a position neatly within the content */
+
+
+  .links-text2 li, .links-text1 li  {
+    padding: 1% 2% 1% 1%;
+    margin: 2% 0 1 4%; 
+    list-style-image: url(https://github.com/Rob01x/boxingimages/blob/main/NicePng_bullet-icon-edt3.png?raw=true);
+  }
+  
+  /*Styling of the website links to make them more aesthetically appealing*/
+  article a {
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: 1000;
+    font-family: "Robotica";
+    font-size: larger;
+  }
+  
