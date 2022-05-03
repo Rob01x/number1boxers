@@ -1,0 +1,98 @@
+/*The background colour for the main content of the page along with the margins and padding values used*/
+#holygrail > * {
+  margin: 0% 0%;
+  padding: 1%;
+  background-color: #ffffff;
+}
+/*Flex settings for content*/
+#holygrail article {
+  flex: 1 1 100vw;
+}
+/*Div for the background image of a boxer about to step into the ring with the header in bold white text with a black border "Number 1 boxers in the world right now" 
+  */
+#holygrail header {
+  background-image: url(https://github.com/Rob01x/boxingimages/blob/main/gantas-vaiciulenas-smallImage-unsplash.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 35% 60%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  padding-bottom: 100%;
+  padding: 10%;
+  border: 2px solid black;
+  border-radius: 2rem;
+  box-shadow: 20px 20px 20px;
+}
+
+/*This keeps the text as a block with same sized margins*/
+.contact-text {
+  width: 88vw;
+  color: #000000;
+  margin: auto;
+  padding: 1% 0;
+}
+/*Styling of the email link to make it more aesthetically appealing*/
+.contact-text a {
+  text-decoration: none;
+  color: #1565c0;
+  font-weight: 1000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+}
+/*Styles for form that users to fil in*/
+#contactform {
+  padding: 2% 5% 2% 5%;
+  margin: 2% 5%;
+  width: 80vw;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 1000;
+  font-size: 120%;
+}
+
+/*Gives color to the form box* and also sizing*/
+.fieldset-form {
+  background-color: lightgrey;
+  border-radius: 1rem;
+  min-width: 250px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/*Allows the boxes of the form to expand to fill the screen space of the device being used*/
+#fname,
+#sname,
+#email {
+  padding: 2% 3% 2% 3%;
+  margin: 2% auto;
+  display: justify;
+  min-width: 230px;
+}
+
+.formdetails {
+  padding: 2% 5% 2% 5%;
+  margin: 2% 2%;
+}
+
+/*Style settings for comment box*/
+#commentdetails {
+  padding: 2% 1% 2% 1%;
+  margin: 8% auto;
+  display: justify;
+  min-width: 210px;
+  text-align: center;
+  font-size: 90%;
+  border-radius: 1rem;
+}
+
+/*Style setting for submit button*/
+.submit-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  border-radius: 0.5rem;
+  padding: 2% 0.5% 2% 0.5%;
+  display: flex;
+  margin: 2% auto;
+  justify-content: center;
+}
