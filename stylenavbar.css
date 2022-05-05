@@ -1,0 +1,318 @@
+/*This features the background burgundy colour of the page and allows for the flex wrap that has been added to the sections so that it's responsive on different devices.*/
+body {
+  margin: 0 0 0 0;
+  background-color: #67032f;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  font-family: verdana;
+}
+
+/*This adds adds a black background to the naviagation bar */
+
+.navbar {
+  background: #262626;
+  overflow: hidden;
+}
+
+/*Adds a left padding to the logo Number 1 boxers */
+.logo {
+  padding: 0 1% 0 ;
+  float: left;
+}
+
+
+/*Styles links inside navigation bar
+*/
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2%;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+/*Changes the color of links on hover*/
+.navbar a:hover {
+  background-color: #262626;
+  color: black;
+}
+
+/*Media quuries 
+Add an active class to highlight the current page
+*/
+.navbar a.active {
+background-color:#262626;
+color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.navbar .icon {
+  display: none;
+}
+
+/* When the screen is less than 1400 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: none;
+    display: block;
+  
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+/*The following lines of code keeps the Nav bar neatly fitted at the top of the page without any padding or margin in between      
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.4s;
+}
+
+/*This is the div that contains the majority of the website with a flex design to make the content flexible to whatever device the user is accessing the website
+*/
+
+.holy-grail {
+  display: flex;
+  flex-flow: row wrap;
+}
+/*The background colour for the main content of the page along with the margins and padding values used*/
+.holy-grail > * {
+  margin: 0% 0%;
+  padding: 1%;
+  background-color: #ffffff;
+}
+/*Div for the background image of a boxer about to step into the ring with the header in bold white text with a black border "Number 1 boxers in the world right now" 
+*/
+.holy-grail header {
+  background-image: url(https://github.com/Rob01x/boxingimages/blob/main/attentie-attentie-fight-night-edtx.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 30%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  padding-bottom: 100%;
+  padding: 10%;
+  border: 2px solid black;
+  border-radius: 2rem;
+  box-shadow: 20px 20px 20px;
+}
+/*Flex settings for the header and footer*/
+.holy-grail header,
+.holy-grail footer,
+.holy-grail main,
+.holy-grail article {
+  flex: 1 1 100vw;
+}
+
+/*The header css styles for the title of the webpage on top of the main background image */
+h1 {
+  text-align: center;
+  font-size: 380%;
+  font-weight: 400;
+  font-family: impact;
+  -webkit-text-stroke: 3px black;
+  -webkit-text-fill-color: #ffffff;
+  
+  
+}
+
+/* This is the flex settings for the main content of the website i.e. the boxer profiles */
+main,
+article {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/*These are the various headings and style values the min-width property is used to ensure that the layout is is flexible and keeps its shape at the same time*/
+h2 {
+  font-size: 150%;
+  font-family: verdana;
+  padding: 2% 0 2% 2%;
+  min-width: 90vw;
+}
+
+h3 {
+  font-size: 140%;
+  font-family: verdana;
+  font-style: italic;
+  text-align: left;
+  padding: 2% 0 2% 2%;
+  min-width: 90vw;
+}
+h4 {
+  font-weight: 1000;
+  font-size: 120%;
+  font-family: Trebuchet MS;
+  padding: 2% 0 2% 2%;
+  text-align: center;
+  min-width: 90vw;
+  color: #67032f;
+}
+/*This keeps the text as a block with same sized margins*/
+.reason-for-site-text,
+.profile-text,
+.grassroots-text,
+.top-boxers-summary,
+.links-text {
+  width: 88vw;
+  text-align: justify;
+  margin: auto;
+  padding: 2% 0;
+}
+
+/* This is the class for the photos of the boxers and when there isn't a photo available the table has been enlargened to take up the whole screen on whatever device the user is viewing the website on
+*/
+img.align-left {
+  margin: 1% auto;
+  padding-top: 0% 2.5% 0% 2.5%;
+  min-width: 360px;
+  max-width: 405px;
+  float: left;
+}
+
+/*These are the setting for the tables, they have been styled with colours and sizing in order for the user to easily read them and understand what information is being conveyed. On smaller devices the boxer images and tables move in order for them to maintain a large enough size so that the table is easy to see with out scrolling or squinting to make out the text*/
+
+table th.left {
+  padding: 0.25%;
+  text-transform: uppercase;
+  min-width: 16.5vw;
+  color: #eeeeee;
+  background-color: #000;
+}
+
+table,
+tr.right-even,
+tr.right-odd {
+  padding: 1%;
+  min-width: 26vw;
+}
+table,
+td.right-even {
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  padding: 2%;
+}
+table,
+td.right-odd {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 2%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 3%;
+  margin: 1% auto;
+  min-width: 350px;
+  max-width: 430px;
+}
+
+/* This alters the table width so that it can fit on smaller devices better without the user having to scroll across the page to see the information */
+table,
+th,
+td {
+  min-width: 38vw;
+  font-size: 95%;
+}
+
+/*These tables have been specifically enlarged in size in order to fill the screen when there is no image at the moment available for these boxers*/
+
+table.George,
+table.Terence,
+table.Jermell,
+th.left,
+td.right {
+  border: 1px solid black;
+  color: black;
+  padding: 1%;
+}
+table.George,
+table.Terence,
+table.Jermell {
+  border-collapse: collapse;
+  border-spacing: 2%;
+  padding: 1%;
+  margin: 1% auto;
+  min-width: 80vw;
+}
+
+/*Grassroots section uses flex box row wrap properties to maintain the size of the images and the space-around property value is used to maintain certain margins around the photos for when the website is displayed on different devices*/
+
+/*Table used to show Summary of number 1 boxers to the client
+*/
+
+table#Summary {
+  min-width: 80vw;
+  max-width: 70vw;
+  margin: 0.5% auto;
+  font-family: 95%;
+  border-collapse: collapse;
+  border-spacing: 2%;
+  padding: 1%;
+  margin: 1% auto;
+}
+table th.left2 {
+  padding: 0%;
+  text-transform: uppercase;
+  min-width: 16vw;
+  color: #eeeeee;
+  background-color: #000;
+}
+/*This makes the columuns shorter so that the table fits onto smaller devices so that you don't have to scroll across the page */
+
+table,
+td.right-even2,
+td.right-even3 {
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  padding: 1%;
+  min-width: 11vw;
+}
+table,
+td.right-odd2,
+td.right-odd3 {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 1%;
+  min-width: 11vw;
+}
+table #Summary,
+th.left2,
+td.right-even2,
+td.right-odd2,
+td.right-even3,
+td.right-odd3 {
+  max-width: 80vw;
+  font-size: 95%;
+}
+/*Styling of the boxer profile links to make it more aesthetically appealing*/
+.right-even2 a,
+.right-odd2 a,
+.right-even3 a {
+  text-decoration: none;
+  color: #67032f;
+  font-weight: 1000;
+  font-family: "Robotica";
+  font-size: larger;
+}
